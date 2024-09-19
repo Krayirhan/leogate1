@@ -1,0 +1,291 @@
+/* Genel ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header.logo{
+    width: 150px; /* Logonun genişliği */
+    height: auto; /* Yüksekliğin oranını otomatik ayarlamak için */
+}
+body {
+    font-family: 'Arial', sans-serif;
+    color: #f4f4f4;
+    background-color: #1e1e1e;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-color: #000;
+    color: white;
+    height: 600px;
+    width: 1890px;
+
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #141414;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.user_profile {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.user_profile i {
+    margin-right: 8px;
+}
+
+.user_profile a:hover {
+    text-decoration: underline;
+}
+
+header section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 40px;
+    margin-top: -200px;
+    margin-bottom: -200px;
+    height: 800px;  
+}
+
+header .content {
+    max-width: 600px;
+}
+
+header .content h5 {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #ff4747;
+}
+
+header .content h1 {
+    font-size: 60px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+header .content p {
+    font-size: 18px;
+    margin: 20px 0 40px;
+}
+
+header .cta {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff4747;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+header .cta:hover {
+    background-color: #ff6161;
+}
+
+header .main_image {
+    max-width: 500px;
+    width: 100%;
+}
+
+.featured_games {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.featured_games h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.game_cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.game_card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.game_card:hover {
+    transform: translateY(-10px);
+}
+
+.game_card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.game_card h3 {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.game_card p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.game_card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4747;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.game_card .btn:hover {
+    background-color: #ff6161;
+}
+
+.community {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #171717;
+}
+
+.community h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.community p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #ddd;
+}
+
+.community .cta {
+    padding: 15px 30px;
+    background-color: #ff4747;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.community .cta:hover {
+    background-color: #ff6161;
+}
+
+.community img {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #111;
+    padding: 40px 0;
+    color: #aaa;
+    text-align: center;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+footer nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    font-size: 16px;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+footer nav ul li a:hover {
+    color: white;
+}
+
+footer .footer_info {
+    margin-bottom: 20px;
+}
+
+footer .footer_info h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+footer .footer_info p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+footer .cta {
+    padding: 15px 30px;
+    background-color: #ff4747;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+footer .cta:hover {
+    background-color: #ff6161;
+}
+
+footer p {
+    font-size: 14px;
+    color: #666;
+}
+
+footer p a {
+    color: #ff4747;
+}
