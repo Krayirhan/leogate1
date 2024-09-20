@@ -289,3 +289,66 @@ footer p {
 footer p a {
     color: #ff4747;
 }
+.slideshow-container {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto; /* Ortalamak için */
+    overflow: hidden; /* Taşan kısımları gizlemek için */
+    padding-left: 350px;
+}
+
+.slide {
+    display: none; /* Tüm slaytları gizle */
+    justify-content: center; /* Görselleri yatayda ortalamak için */
+    align-items: center; /* Görselleri dikeyde ortalamak için */
+    height: 100%; /* Slaytın yüksekliğini ayarlamak için */
+}
+
+.slide img {
+    width: 100%; /* Görselin genişliği %100 */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0; /* Sağda yerleştir */
+    border-radius: 3px 0 0 3px; /* Kenar yuvarlama */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+button.prev, button.next {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
